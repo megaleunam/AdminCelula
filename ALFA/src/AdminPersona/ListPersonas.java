@@ -5,6 +5,7 @@
  */
 package AdminPersona;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -12,12 +13,14 @@ import java.util.List;
  * @author Maria Mata
  */
 public class ListPersonas {
-    List <Persona> listapersona;
+    List<Persona> listapersona;
 
     public ListPersonas() {
+        listapersona = new ArrayList<>();
     }
 
     public ListPersonas( Persona persona) {
+        listapersona = new ArrayList<>();
         listapersona.add(persona);
     }
 

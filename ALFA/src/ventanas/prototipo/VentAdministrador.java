@@ -28,111 +28,96 @@ public class VentAdministrador extends javax.swing.JFrame {
     private void initComponents() {
 
         pn = new javax.swing.JPanel();
+        jpCelula = new javax.swing.JPanel();
         lblCelula = new javax.swing.JLabel();
+        jpRedes = new javax.swing.JPanel();
         lblRedes = new javax.swing.JLabel();
-        lblPersonas = new javax.swing.JLabel();
+        jpPersonas = new javax.swing.JPanel();
+        lblPErsonas = new javax.swing.JLabel();
+        jpLideres = new javax.swing.JPanel();
         lblLideres = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        lblCelula.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
-        lblCelula.setText("Celulas");
-        lblCelula.setToolTipText("");
-        lblCelula.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        lblCelula.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                lblCelulaMouseClicked(evt);
-            }
-        });
+        pn.setBackground(new java.awt.Color(52, 73, 94));
 
-        lblRedes.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
-        lblRedes.setText("Redes");
-        lblRedes.setToolTipText("");
-        lblRedes.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        lblRedes.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                lblRedesMouseClicked(evt);
-            }
-        });
+        jpCelula.setBackground(new java.awt.Color(52, 152, 219));
+        jpCelula.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        lblPersonas.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
-        lblPersonas.setText("Personas");
-        lblPersonas.setToolTipText("");
-        lblPersonas.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        lblPersonas.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                lblPersonasMouseClicked(evt);
-            }
-        });
+        lblCelula.setFont(new java.awt.Font("Noto Sans", 1, 18)); // NOI18N
+        lblCelula.setForeground(new java.awt.Color(255, 255, 255));
+        lblCelula.setText("CELULAS");
+        jpCelula.add(lblCelula, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
 
-        lblLideres.setFont(new java.awt.Font("Comic Sans MS", 0, 12)); // NOI18N
-        lblLideres.setText("Lideres");
-        lblLideres.setToolTipText("");
-        lblLideres.setBorder(javax.swing.BorderFactory.createEtchedBorder());
-        lblLideres.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                lblLideresMouseClicked(evt);
-            }
-        });
+        jpRedes.setBackground(new java.awt.Color(52, 152, 219));
+        jpRedes.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        lblRedes.setFont(new java.awt.Font("Noto Sans", 1, 18)); // NOI18N
+        lblRedes.setForeground(new java.awt.Color(255, 255, 255));
+        lblRedes.setText("REDES");
+        jpRedes.add(lblRedes, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
+
+        jpPersonas.setBackground(new java.awt.Color(52, 152, 219));
+        jpPersonas.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        lblPErsonas.setFont(new java.awt.Font("Noto Sans", 1, 18)); // NOI18N
+        lblPErsonas.setForeground(new java.awt.Color(255, 255, 255));
+        lblPErsonas.setText("PERSONAS");
+        jpPersonas.add(lblPErsonas, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 10, -1, -1));
+
+        jpLideres.setBackground(new java.awt.Color(52, 152, 219));
+        jpLideres.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        lblLideres.setFont(new java.awt.Font("Noto Sans", 1, 18)); // NOI18N
+        lblLideres.setForeground(new java.awt.Color(255, 255, 255));
+        lblLideres.setText("LIDERES");
+        jpLideres.add(lblLideres, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 10, -1, -1));
 
         javax.swing.GroupLayout pnLayout = new javax.swing.GroupLayout(pn);
         pn.setLayout(pnLayout);
         pnLayout.setHorizontalGroup(
             pnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnLayout.createSequentialGroup()
-                .addGap(64, 64, 64)
                 .addGroup(pnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblCelula, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblRedes, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 80, Short.MAX_VALUE)
-                .addGroup(pnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblPersonas, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblLideres, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(78, 78, 78))
+                    .addGroup(pnLayout.createSequentialGroup()
+                        .addGap(61, 61, 61)
+                        .addComponent(jpCelula, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jpPersonas, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(pnLayout.createSequentialGroup()
+                        .addGap(69, 69, 69)
+                        .addComponent(jpRedes, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 191, Short.MAX_VALUE)
+                        .addComponent(jpLideres, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(107, 107, 107))
         );
         pnLayout.setVerticalGroup(
             pnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnLayout.createSequentialGroup()
-                .addGap(48, 48, 48)
-                .addGroup(pnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblCelula, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblPersonas, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(48, 48, 48)
-                .addGroup(pnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblRedes, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblLideres, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(126, Short.MAX_VALUE))
+                .addGap(116, 116, 116)
+                .addGroup(pnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jpPersonas, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jpCelula, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 86, Short.MAX_VALUE)
+                .addGroup(pnLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jpLideres, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jpRedes, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 48, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(104, 104, 104))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(pn, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(pn, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addComponent(pn, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void lblCelulaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblCelulaMouseClicked
-        System.out.println("ventanas.prototipo.VentAdministrador.lblCelulaMouseClicked()");        // TODO add your handling code here:
-    }//GEN-LAST:event_lblCelulaMouseClicked
-
-    private void lblRedesMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblRedesMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_lblRedesMouseClicked
-
-    private void lblPersonasMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblPersonasMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_lblPersonasMouseClicked
-
-    private void lblLideresMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblLideresMouseClicked
-        // TODO add your handling code here:
-    }//GEN-LAST:event_lblLideresMouseClicked
 
     /**
      * @param args the command line arguments
@@ -170,9 +155,13 @@ public class VentAdministrador extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JPanel jpCelula;
+    private javax.swing.JPanel jpLideres;
+    private javax.swing.JPanel jpPersonas;
+    private javax.swing.JPanel jpRedes;
     private javax.swing.JLabel lblCelula;
     private javax.swing.JLabel lblLideres;
-    private javax.swing.JLabel lblPersonas;
+    private javax.swing.JLabel lblPErsonas;
     private javax.swing.JLabel lblRedes;
     private javax.swing.JPanel pn;
     // End of variables declaration//GEN-END:variables
